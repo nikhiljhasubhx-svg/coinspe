@@ -1,0 +1,76 @@
+site_name: Coinspe API Docs
+site_description: "Public API documentation for Coinspe"
+site_author: Coinspe
+site_url: https://coinspe.github.io
+repo_name: coinspe/coinspe.github.io
+repo_url: https://github.com/coinspe/coinspe.github.io
+edit_uri: ''
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Quickstart: getting-started/quickstart.md
+      - Authentication: getting-started/authentication.md
+  - API Reference:
+      - Overview: api-reference/overview.md
+      - REST Endpoints: api-reference/rest-endpoints.md
+      - Webhooks: api-reference/webhooks.md
+  - Guides:
+      - Errors & Troubleshooting: guides/errors.md
+      - SDKs & Tools: guides/sdks.md
+  - Resources:
+      - Changelog: resources/changelog.md
+      - Support: resources/support.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.tabs
+    - navigation.path
+    - content.code.copy
+    - content.action.edit
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: cyan
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: cyan
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/coinspe
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@coinspe.com
+  generator: false
+
+extra_css:
+  - assets/stylesheets/overrides.css

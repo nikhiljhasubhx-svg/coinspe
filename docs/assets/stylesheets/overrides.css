@@ -1,0 +1,12 @@
+:root {
+  --md-primary-fg-color: #4338ca;
+  --md-accent-fg-color: #06b6d4;
+}
+
+.md-header__title {
+  font-weight: 600;
+}
+
+.md-typeset table {
+  font-size: 0.95rem;
+}
